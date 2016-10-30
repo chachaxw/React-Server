@@ -10,19 +10,19 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "babel-preset-react-server": "^0.3.3",
-    "babel-runtime": "^6.6.1",
-    "react": "~0.14.2",
-    "react-dom": "~0.14.2",
-    "react-server": "^0.4.6",
-    "react-server-cli": "^0.4.6",
-    "superagent": "1.8.4"
+    "babel-preset-react-server": "^0.4.8",
+    "babel-runtime": "^6.18.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-server": "^0.4.8",
+    "react-server-cli": "^0.4.9",
+    "superagent": "^2.3.0"
   },
   "devDependencies": {
-    "ava": "^0.15.1",
-    "babel-eslint": "^6.1.2",
-    "eslint": "3.2.2",
-    "eslint-plugin-react": "6.0.0",
-    "nsp": "^2.3.3"
+    "ava": "^0.16.0",
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.9.0",
+    "eslint-plugin-react": "^6.4.1",
+    "nsp": "^2.6.2"
   }
 }
