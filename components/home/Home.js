@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { logging } from 'react-server';
+import 'normalize.css';
 import Layout from '../common/Layout';
 import BannerImg from "../common/BannerImg";
 import MoreInfo from '../common/MoreInfo';
 import Button from "../common/Button";
 import PortfolioItem from "../common/PortfolioItem";
+import '../common/styles.css';
 
 const logger = logging.getLogger(__LOGGER__);
 

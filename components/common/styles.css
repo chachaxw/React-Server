@@ -1,0 +1,685 @@
+/*@import "iconfont";*/
+
+body {
+  background: #f4f4f4;
+}
+/* 颜色主题 */
+p {
+  text-align: center;
+}
+/* 导航菜单组件样式 */
+.nav-bar {
+  height: 60px;
+  background: #343434;
+}
+.nav-bar .nav-logo {
+  height: 60px;
+  overflow: hidden;
+}
+.nav-bar .nav-logo a {
+  display: inline-block;
+  margin-top: 13px;
+  margin-left: 10%;
+  font-size: 0;
+}
+.nav-bar .nav-logo img {
+  width: 138px;
+  height: 34px;
+}
+.nav-bar .nav-menu ul {
+  float: right;
+  margin-right: 10%;
+  line-height: 60px;
+}
+.nav-bar .nav-menu li {
+  float: left;
+  font-size: 16px;
+  margin-right: 50px;
+}
+.nav-bar .nav-menu li:last-child {
+  margin-right: 0;
+}
+/* 页脚组件样式 */
+.footer {
+  height: 200px;
+  background: #343434;
+  text-align: center;
+  position: relative;
+}
+.footer ul {
+  display: inline-block;
+  line-height: 1;
+}
+.footer .footer-logo {
+  padding-top: 20px;
+}
+.footer .footer-nav {
+  margin-top: 30px;
+}
+.footer .footer-nav li {
+  float: left;
+  margin-right: 40px;
+  font-size: 16px;
+}
+.footer .footer-nav li:last-child {
+  margin-right: 0;
+}
+.footer .footer-social-icon {
+  display: inline-block;
+  height: 40px;
+  line-height: 1;
+}
+.footer .footer-social-icon .iconfont {
+  font-size: 40px;
+  color: black;
+  cursor: default;
+}
+.footer .footer-social-icon:hover .tips-box {
+  opacity: 1;
+  -webkit-transform: matrix(1, 0, 0, 1, 1, 1);
+  -moz-transform: matrix(1, 0, 0, 1, 1, 1);
+  transform: matrix(1, 0, 0, 1, 1, 1);
+}
+.footer .footer-social-icon,
+.footer .footer-info {
+  margin-top: 10px;
+}
+/* 页脚tips组件样式 */
+.tips-box {
+  position: absolute;
+  bottom: 100px;
+  width: 280px;
+  height: 160px;
+  left: 50%;
+  margin-left: -140px;
+  background: #343434;
+  padding: 15px;
+  opacity: 0;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+  -webkit-transform: matrix(1, 0, 0, 0.2, 1, 1);
+  -moz-transform: matrix(1, 0, 0, 0.2, 1, 1);
+  transform: matrix(1, 0, 0, 0.2, 1, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -moz-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.tips-box:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -10px;
+  border-top: 15px #343434 solid;
+  border-left: 10px transparent solid;
+  border-right: 10px transparent solid;
+  border-bottom: 0 transparent solid;
+}
+.tips-box .tips-img {
+  float: left;
+  height: 130px;
+}
+.tips-box .tips-info {
+  color: #E8E8E8;
+  margin-left: 130px;
+  height: 130px;
+  font-size: 16px;
+  text-align: center;
+}
+.tips-box .tips-info .iconfont {
+  color: #E8E8E8;
+}
+.tips-box .tips-info p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.nav-menu a,
+.tap-menu a,
+.footer-nav a {
+  color: #E8E8E8;
+}
+.nav-menu a:hover,
+.tap-menu a:hover,
+.footer-nav a:hover,
+.nav-menu a.nav-active,
+.tap-menu a.nav-active,
+.footer-nav a.nav-active {
+  color: #1573C6;
+}
+/* 我的作品组件样式 */
+.portfolio-box {
+  height: auto;
+  padding-bottom: 80px;
+  overflow: hidden;
+  background: #F2F2F2;
+}
+.portfolio-box h1 {
+  margin: 50px auto 0;
+  text-align: center;
+  font-size: 24px;
+}
+.portfolio-box .row {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.portfolio-box .portfolio-item {
+  margin: 0 auto;
+  height: 410px;
+  max-width: 300px;
+  min-width: 250px;
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -moz-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.portfolio-box .portfolio-item:hover {
+  box-shadow: 0 5px 35px rgba(52, 52, 52, 0.5);
+}
+.portfolio-box .portfolio-item .portfolio-img {
+  width: 100%;
+  height: 250px;
+}
+.portfolio-box .portfolio-item .portfolio-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portfolio-box .portfolio-item .portfolio-desc {
+  height: 160px;
+  padding: 15px;
+  background: white;
+}
+.portfolio-box .portfolio-item a {
+  color: #343434;
+}
+.portfolio-box .portfolio-item h2 {
+  font-size: 18px;
+}
+.portfolio-box .portfolio-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  color: #818181;
+}
+/* Banner图片样式 */
+.banner-img-box {
+  height: 600px;
+  width: 100%;
+  background: no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+/* 按钮样式 */
+.rect-button {
+  display: inline-block;
+  width: 140px;
+  line-height: 50px;
+  text-align: center;
+  background: #1573C6;
+  opacity: 0.75;
+  font-size: 16px;
+  color: white;
+  transition: all .3s;
+}
+.rect-button:hover {
+  opacity: 1;
+  color: white;
+}
+/* 首页banner样式 */
+.banner-img-box p {
+  max-width: 300px;
+  margin: 10px auto;
+  font-size: 16px;
+  color: white;
+}
+.banner-img-box .banner-logo {
+  max-width: 380px;
+  margin: 140px auto;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+.banner-img-box .banner-logo img {
+  width: 100%;
+}
+.banner-img-box .banner-buttons {
+  max-width: 380px;
+  margin: 30px auto;
+}
+.banner-img-box .rect-button {
+  margin-right: 100px;
+}
+.banner-img-box .rect-button:first-child {
+  background: #343434;
+}
+.banner-img-box .rect-button:last-child {
+  margin-right: 0;
+}
+/* 首页关于样式 */
+.home-about {
+  height: 620px;
+  background: white;
+  text-align: center;
+}
+.home-about .about-user-head {
+  display: inline-block;
+  margin-top: 88px;
+  width: 300px;
+  height: 300px;
+}
+.home-about .about-user-head img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.home-about .about-content {
+  max-width: 550px;
+  margin: 20px auto;
+}
+.home-about .about-content h1 {
+  font-size: 24px;
+}
+.home-about .about-content h2,
+.home-about .about-content p {
+  font-size: 16px;
+}
+.home-about .about-content p {
+  padding: 0 20px;
+  color: #818181;
+}
+/* 首页更多信息组件样式 */
+.more-info {
+  background: #1573C6;
+  height: 300px;
+  color: #E8E8E8;
+  text-align: center;
+  overflow: hidden;
+}
+.more-info p {
+  font-size: 16px;
+  margin-top: 76px;
+}
+.more-info p:last-child {
+  margin-top: 15px;
+}
+.more-info a {
+  margin-left: 6px;
+}
+.more-info .rect-button {
+  background: #343434;
+  margin-top: 15px;
+}
+.more-info h1 {
+  font-size: 48px;
+  font-weight: 200;
+}
+/* 首页更多作品 */
+.home-more-works {
+  background: ＃fff;
+}
+.home-more-works p {
+  max-width: 468px;
+  margin: 85px auto 0;
+  padding: 0 10px;
+  color: #818181;
+}
+.home-more-works .rect-button {
+  background: #1573C6;
+  margin-left: 0;
+}
+/* 全屏大图组件样式 */
+.hero-img-box {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -99;
+}
+/* 全屏内容组件样式 */
+.svg-filters {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+.hero-content {
+  text-align: center;
+  position: relative;
+  height: 94vh;
+  color: white;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hero-content h1 {
+  -webkit-filter: url(#filter);
+  filter: url(/#filter);
+  margin-top: 190px;
+  font-size: 72px;
+  font-weight: 200;
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.hero-content h1 .blue {
+  color: #1573C6;
+}
+.hero-content h1 .red {
+  color: #E72525;
+}
+.hero-content p {
+  max-width: 350px;
+  margin: 40px auto;
+  font-size: 18px;
+}
+.hero-content .rect-button {
+  width: 200px;
+  background: #343434;
+}
+.hero-content .down-arrow {
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  bottom: 50px;
+  width: 16px;
+  height: 130px;
+  background: no-repeat center;
+  background-image: url(../../public/images/down-arrow.png);
+}
+/* 关于页面我的技能样式 */
+.my-skill {
+  background: #3B516F;
+  color: #E8E8E8;
+  text-align: center;
+  font-weight: 200;
+}
+.my-skill .my-title-img,
+.my-skill .my-skill-list {
+  height: 512px;
+  overflow: hidden;
+}
+.my-skill .my-title-img {
+  font-size: 36px;
+  padding: 190px 0;
+  background: url(../../public/images/who-am-I.png) center no-repeat;
+  background-size: cover;
+}
+.my-skill .my-title-img p {
+  max-width: 340px;
+  margin: 0 auto;
+}
+.my-skill .my-skill-list h2 {
+  font-size: 36px;
+  margin: 30px auto;
+  font-weight: 200;
+}
+.my-skill .my-skill-list li {
+  line-height: 30px;
+  margin-top: 15px;
+}
+.my-skill .my-skill-list .skill-name {
+  margin-right: 10px;
+  font-size: 16px;
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+.my-skill .my-skill-list .ant-progress-line-wrap {
+  width: 80%;
+  font-size: 16px;
+}
+/* 关于页面我的爱好样式 */
+.my-interest {
+  background: url(../../public/images/bg-img.jpg) no-repeat;
+  background-size: cover;
+}
+.my-interest .more-info {
+  background: none;
+  height: auto;
+  padding-bottom: 40px;
+}
+.my-interest .more-info h1 {
+  margin-top: 40px;
+}
+.my-interest .more-info p {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0 10px;
+}
+.my-interest .interest-list {
+  margin: 0 auto;
+  text-align: center;
+  color: #E8E8E8;
+}
+.my-interest .interest-list span {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border: 2px #E8E8E8 solid;
+  border-radius: 50%;
+}
+.my-interest .interest-list span:hover {
+  -webkit-animation: flip .5s;
+  animation: flip .5s;
+}
+.my-interest .interest-list p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.my-interest .interest-list .iconfont {
+  font-size: 60px;
+}
+/* 关于页面下载我的简历样式 */
+.what-i-did .what-title {
+  height: 200px;
+  text-align: center;
+  background-color: #E8E8E8;
+}
+.what-i-did .what-title h1 {
+  font-size: 36px;
+  color: #343434;
+  font-weight: normal;
+  padding: 30px 10px;
+}
+.what-i-did .what-content {
+  position: relative;
+  background-color: white;
+  height: 1000px;
+}
+.what-i-did .what-line {
+  background-color: #E8E8E8;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* 关于页面下载我的简历样式 */
+.download-info p {
+  max-width: 500px;
+  margin: 85px auto 20px;
+}
+.download-info .rect-button {
+  width: 230px;
+  margin: 0;
+}
+.download-info .rect-button .iconfont {
+  color: #E8E8E8;
+  font-size: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+/* 各种屏幕下的页面布局 */
+@media only screen and (min-width: 1280px) {
+  .tap-menu {
+    display: none;
+  }
+  .portfolio-box .portfolio-item {
+    max-width: 300px;
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  .tap-menu {
+    display: none;
+  }
+  .portfolio-box .portfolio-item {
+    max-width: 360px;
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 319px) and (max-width: 768px) {
+  .nav-menu > ul {
+    display: none;
+  }
+  .tap-menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    z-index: 1;
+    background: #343434;
+  }
+  .tap-menu .nav-logo {
+    text-align: left;
+  }
+  .tap-menu .tap-menu-button {
+    float: right;
+    margin-top: 7px;
+    margin-right: 10px;
+    line-height: 38px;
+  }
+  .tap-menu .tap-menu-button .iconfont {
+    font-size: 38px;
+    color: #E8E8E8;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .tap-menu .tap-menu-list {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+  .tap-menu .tap-menu-list ul {
+    overflow: hidden;
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -moz-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  .tap-menu .tap-menu-list li {
+    margin-top: 10px;
+  }
+  .tap-menu .tap-menu-list li:last-child {
+    margin-bottom: 30px;
+  }
+  .banner-buttons {
+    text-align: center;
+  }
+  .banner-buttons .rect-button {
+    width: 280px;
+    margin: 10px auto;
+  }
+  .home-about {
+    height: 560px;
+  }
+  .home-about .about-user-head,
+  .home-about .about-user-head img {
+    width: 200px;
+    height: 200px;
+  }
+  .portfolio-box .portfolio-item {
+    margin-top: 60px;
+  }
+  .my-skill .my-skill-list ul {
+    padding: 0 20px;
+  }
+  .hero-content h1 {
+    font-size: 48px;
+  }
+  .more-info h1 {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .hero-content h1 {
+    font-size: 42px;
+    margin-top: 60px;
+  }
+  .hero-content p {
+    margin: 20px auto;
+  }
+}
+/* css3 动画 */
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
