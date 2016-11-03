@@ -1,25 +1,19 @@
-import React from 'react';
-import Row from 'antd/lib/row';
-import Col from 'antd/lib/col';
+import React, { Component } from 'react';
 import '../../../public/less/App.less';
 import TapMenu from './TapMenu';
-import { Link } from 'react-router';
-import ResponsiveMixin from 'react-responsive-mixin';
 
-const NavBar = React.createClass({
+export default class NavBar extends Component{
 
-    mixins: [ResponsiveMixin],
-
-    render: function(){
+    render(){
         return (
             <nav className="nav-bar">
-                <Row>
-                    <Col span="12" className="nav-logo">
+                <div>
+                    <div span="12" className="nav-logo">
                         <a href="/">
                             <img src="public/images/nav-logo.svg" />
                         </a>
-                    </Col>
-                    <Col span="12" className="nav-menu">
+                    </div>
+                    <div span="12" className="nav-menu">
                         <ul>
                             <li><a href="/" className="nav-active">Home</a></li>
                             <li>
@@ -30,12 +24,10 @@ const NavBar = React.createClass({
                             </li>
                             <li><a href="http://github.com/chachaxw" target="_blank">Github</a></li>
                         </ul>
-                    </Col>
-                </Row>
+                    </div>
+                </div>
                 <TapMenu />
             </nav>
         )
     }
-})
-
-export default NavBar;
+};

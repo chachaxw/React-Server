@@ -1,6 +1,4 @@
 import React from 'react';
-import Row from 'antd/lib/row';
-import Col from 'antd/lib/col';
 import { Link } from 'react-router';
 import '../../../public/less/App.less';
 
