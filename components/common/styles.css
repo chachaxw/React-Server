@@ -1,7 +1,8 @@
-/*@import "iconfont";*/
-
+@import "iconfont.css";
+@import "normalize.css";
 body {
   background: #f4f4f4;
+  padding: 0;
 }
 /* 颜色主题 */
 p {

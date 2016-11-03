@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { logging } from 'react-server';
-import 'normalize.css';
 import Layout from '../common/Layout';
 import BannerImg from "../common/BannerImg";
 import MoreInfo from '../common/MoreInfo';
