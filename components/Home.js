@@ -4,6 +4,7 @@ import { logging } from 'react-server';
 const logger = logging.getLogger(__LOGGER__);
 
 export default class Home extends Component {
+  
     constructor(props) {
         super(props);
         this.state = {exclamationCount: 0};
