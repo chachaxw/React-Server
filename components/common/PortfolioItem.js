@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ResponsiveMixin from 'react-responsive-mixin';
 
 class ListItemWrapper extends Component{
   render() {
@@ -51,7 +50,6 @@ export default class PortfolioItem extends Component{
   }
 
   render() {
-
     return (
       <div ref="list">
         {this.state.items.map( item => (

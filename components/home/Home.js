@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import { logging } from 'react-server';
 import Layout from '../common/Layout';
 import BannerImg from "../common/BannerImg";
-import HomeAbout from '../home/HomeAbout';
 import MoreInfo from '../common/MoreInfo';
 import Button from "../common/Button";
 import PortfolioItem from "../common/PortfolioItem";
-import InfoContent from '../home/InfoCon';
-import HomePortfolio from '../home/HomePortfolio';
-import HomeMore from '../home/HomeMore';
 
 const logger = logging.getLogger(__LOGGER__);
 
