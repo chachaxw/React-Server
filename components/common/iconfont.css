@@ -1,9 +1,10 @@
-@font-face {font-family: "iconfont";
-  src: url('//at.alicdn.com/t/font_srec49sczuth85mi.js'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_srec49sczuth85mi.js') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_srec49sczuth85mi.js') format('woff'), /* chrome, firefox */
-  url('//at.alicdn.com/t/font_srec49sczuth85mi.js') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_srec49sczuth85mi.js') format('svg'); /* iOS 4.1- */
+@font-face {
+  font-family: 'iconfont';  /* project id："59451" */
+  src: url('//at.alicdn.com/t/font_srec49sczuth85mi.eot');
+  src: url('//at.alicdn.com/t/font_srec49sczuth85mi.eot') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_srec49sczuth85mi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_srec49sczuth85mi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_srec49sczuth85mi.svg#iconfont') format('svg');
 }
 
 .iconfont {
