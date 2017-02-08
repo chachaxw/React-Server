@@ -1,8 +1,8 @@
 {
   "routesFile": "./routes.js",
   "host": "localhost",
-  "port": 3000,
-  "jsPort": 3001,
+  "port": 3030,
+  "jsPort": 4001,
   "hot": true,
   "minify": false,
   "longTermCaching": false,
